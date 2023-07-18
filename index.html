@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLE SHEET -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+</head>
+
+<body>
+
+    <main id="main-component">
+      <!-- INFO -->
+      <section id="info-section">
+        <form id="info-form">
+          <div class="form-item">
+            <label class="label" for="day" >DAY</label>
+            <input id="day" type="text" placeholder="D">
+            <div class="error" id="day-error"></div>
+          </div>
+          <div class="form-item">
+            <label class="label" for="month" >MONTH</label>
+            <input id="month" type="text" placeholder="M">
+            <div class="error" id="month-error"></div>
+          </div>
+          <div class="form-item">
+            <label class="label" for="year" >YEAR</label>
+            <input id="year" type="text" placeholder="YYYY">
+            <div class="error" id="year-error"></div>
+          </div>
+        </form>
+      </section>
+
+      
+      <div id="separator">   
+        <button type="submit" id="submit-button">
+          <img src="./assets/images/icon-arrow.svg" alt="icon-arrow" id="arrow">
+        </button>
+      </div>
+
+      <!-- RESULTS -->
+      <section id="results-section">
+
+        <div class="results-container">
+            <div id="year-number" class="number">
+              0
+            </div>
+            <div class="interval">
+              YEARS
+            </div>
+        </div>
+        <div class="results-container">
+          <div id="month-number" class="number">
+            0
+          </div>
+          <div class="interval">
+            MONTHS 
+          </div>
+        </div>
+        <div class="results-container">
+          <div id="day-number" class="number">
+            0
+          </div>
+          <div class="interval">
+            DAYS
+          </div>
+        </div>
+        
+      </section>
+
+    </main>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
